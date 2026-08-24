@@ -149,7 +149,7 @@ sns.heatmap(corr,annot=True)
 sns.pairplot(dt)
 ~~~
 
-<img width="1917" height="1010" alt="Screenshot 2026-08-06 204416" src="https://github.com/user-attachments/assets/8e60b863-b436-45cc-aab7-13372bc983dd" 
+<img width="1917" height="1010" alt="Screenshot 2026-08-06 204416" src="https://github.com/user-attachments/assets/8e60b863-b436-45cc-aab7-13372bc983dd"> 
 <img width="1917" height="1006" alt="Screenshot 2026-08-06 204432" src="https://github.com/user-attachments/assets/34107fb6-cef2-4a74-b74a-fd4bd0216370" />
 
 
