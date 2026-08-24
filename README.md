@@ -87,12 +87,15 @@ dt
 dt.Pclass.unique()
 ~~~
 
+
+
+<img width="1917" height="1005" alt="Screenshot 2026-08-06 204156" src="https://github.com/user-attachments/assets/fe821551-af86-4b74-a9ba-74b8d0c4d359" />
+
 ~~~
 dt.rename(columns={'Sex':'Gender'},inplace=True)
 dt
 ~~~
 
-<img width="1917" height="1005" alt="Screenshot 2026-08-06 204156" src="https://github.com/user-attachments/assets/fe821551-af86-4b74-a9ba-74b8d0c4d359" />
 ~~~
 sns.catplot(x="Gender",col="Survived",kind="count",data=dt,height=5,aspect=.7)
 ~~~
