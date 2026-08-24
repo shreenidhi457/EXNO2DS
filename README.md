@@ -1,4 +1,7 @@
 # EXNO2DS
+## Date:8.8.2026
+## Name: Shreenidhi S
+## Reg no: 212225040410
 # AIM:
       To perform Exploratory Data Analysis on the given data set.
       
