@@ -64,12 +64,14 @@ dt.nunique()
 dt["Survived"].value_counts()
 ~~~
 
+
+
+<img width="1917" height="997" alt="Screenshot 2026-08-06 204123" src="https://github.com/user-attachments/assets/bd28d840-f780-41f5-be4f-dfc528d9c956" />
+
 ~~~
 per=(dt["Survived"].value_counts()/dt.shape[0]*100).round(2)
 per
 ~~~
-
-<img width="1917" height="997" alt="Screenshot 2026-08-06 204123" src="https://github.com/user-attachments/assets/bd28d840-f780-41f5-be4f-dfc528d9c956" />
 
 ~~~
 sns.countplot(data=dt,x="Survived")
