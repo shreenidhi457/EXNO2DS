@@ -159,6 +159,6 @@ sns.pairplot(dt)
 
 
 # RESULT
-        ~~~
+~~~
     Data analysis was completed successfully
 ~~~~
