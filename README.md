@@ -46,6 +46,7 @@ dt.shape
 ~~~
 
 <img width="1907" height="998" alt="Screenshot 2026-08-06 204105" src="https://github.com/user-attachments/assets/0930e42b-eafc-4917-9e21-eaa4f1ffe524" />
+
 ~~~
 dt.set_index("PassengerId",inplace=True)
 ~~~
@@ -56,6 +57,7 @@ dt.describe()
 ~~~
 dt.nunique()
 ~~~
+
 <img width="1917" height="1012" alt="Screenshot 2026-08-06 204115" src="https://github.com/user-attachments/assets/f48d035e-c552-481b-a168-0b21a31457da" />
 
 ~~~
@@ -66,16 +68,21 @@ dt["Survived"].value_counts()
 per=(dt["Survived"].value_counts()/dt.shape[0]*100).round(2)
 per
 ~~~
+
 <img width="1917" height="997" alt="Screenshot 2026-08-06 204123" src="https://github.com/user-attachments/assets/bd28d840-f780-41f5-be4f-dfc528d9c956" />
+
 ~~~
 sns.countplot(data=dt,x="Survived")
 ~~~
 
 <img width="1917" height="1000" alt="Screenshot 2026-08-06 204132" src="https://github.com/user-attachments/assets/a61d1b6d-0d67-4d28-85e1-ac8b586f0332" />
+
 ~~~
 dt
 ~~~
+
 <img width="1917" height="1030" alt="Screenshot 2026-08-06 204141" src="https://github.com/user-attachments/assets/c3b200d4-669f-4216-a5ef-8b2ed6f78280" />
+
 ~~~
 dt.Pclass.unique()
 ~~~
@@ -84,27 +91,36 @@ dt.Pclass.unique()
 dt.rename(columns={'Sex':'Gender'},inplace=True)
 dt
 ~~~
+
 <img width="1917" height="1005" alt="Screenshot 2026-08-06 204156" src="https://github.com/user-attachments/assets/fe821551-af86-4b74-a9ba-74b8d0c4d359" />
 ~~~
 sns.catplot(x="Gender",col="Survived",kind="count",data=dt,height=5,aspect=.7)
 ~~~
+
 <img width="1916" height="1013" alt="Screenshot 2026-08-06 204206" src="https://github.com/user-attachments/assets/fede45ce-c2bf-4726-964e-20ff6405ac48" />
+
 ~~~
 sns.catplot(x="Survived",hue="Gender",data=dt,kind="count")
 ~~~
+
 <img width="1903" height="992" alt="Screenshot 2026-08-06 204216" src="https://github.com/user-attachments/assets/fb71ed31-5af9-4632-8392-e81035cae323" />
+
 ~~~
 dt.boxplot(column="Age",by="Survived")
 ~~~
 
 <img width="1916" height="970" alt="Screenshot 2026-08-06 204225" src="https://github.com/user-attachments/assets/54fcdfa1-024a-4dc3-94e1-8af92b862784" />
+
 ~~~
 sns.scatterplot(x=dt["Age"],y=dt["Fare"])
 ~~~
+
 <img width="1917" height="972" alt="Screenshot 2026-08-06 204245" src="https://github.com/user-attachments/assets/7b3cee8e-3f28-4b33-b44e-0ad226b0007a" />
+
 ~~~
 sns.jointplot(x="Age",y="Fare",data=dt)
 ~~~
+
 <img width="1917" height="1000" alt="Screenshot 2026-08-06 204259" src="https://github.com/user-attachments/assets/1d196262-03a4-4ea5-a205-e1eb94a00b2f" />
 
 ~~~
@@ -114,9 +130,11 @@ pt=sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=dt)
 
 
 <img width="1386" height="1023" alt="Screenshot 2026-08-06 204307" src="https://github.com/user-attachments/assets/98fec690-35a4-4508-897a-1ced58f153d3" />
+
 ~~~
 sns.catplot(data=dt,col="Survived",x="Gender",hue="Pclass",kind="count")
 ~~~
+
 <img width="1917" height="1016" alt="Screenshot 2026-08-06 204315" src="https://github.com/user-attachments/assets/fc422947-d6c8-47cd-b839-b2974d291e37" />
 
 ~~~
@@ -126,6 +144,7 @@ sns.heatmap(corr,annot=True)
 ~~~
 
 <img width="1917" height="1055" alt="Screenshot 2026-08-06 204334" src="https://github.com/user-attachments/assets/96a116e0-6e5f-4902-aabb-5f486326817d" />
+
 ~~~
 sns.pairplot(dt)
 ~~~
