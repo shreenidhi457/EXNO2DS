@@ -36,6 +36,7 @@ dt=pd.read_csv("/content/titanic_dataset.csv")
 dt
 ~~~
 <img width="1912" height="1013" alt="Screenshot 2026-08-06 204057" src="https://github.com/user-attachments/assets/0e5e558b-911e-47c3-adc0-02bf0a41edcc" />
+
 ~~~
 dt.info()
 ~~~
